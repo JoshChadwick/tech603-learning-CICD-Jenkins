@@ -1,3 +1,3 @@
 # tech603-learning-CICD-Jenkins
 Repository for testing Jenkins CICD Pipeline
-test 2
+line added to test job 1 triggers with push to dev branch
