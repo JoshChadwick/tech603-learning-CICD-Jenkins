@@ -13,7 +13,7 @@ const O_MARKER_IMAGE_PATH = path.join(__dirname, 'public', 'images', 'o.png');
 const PACKAGE_JSON_PATH = path.join(__dirname, 'package.json');
 const PACKAGE_METADATA = JSON.parse(fs.readFileSync(PACKAGE_JSON_PATH, 'utf8'));
 const APP_VERSION = `v${PACKAGE_METADATA.version}`;
-const APP_FOOTER_TIMESTAMP = new Date.getTime();
+const APP_FOOTER_TIMESTAMP = new Date().getTime();
 let hasLoggedMissingMongoDriver = false;
 
 function isEnabledEnvToggle(value) {
